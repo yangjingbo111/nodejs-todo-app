@@ -1,0 +1,12 @@
+1 add main html file using ejs template;
+create views folder in the project folder;
+when use ejs template engine, we should use render() method;
+
+2 serving static files in express
+use link tag in the html file does not effectp[express not support]
+ref to:
+https://expressjs.com/en/starter/static-files.html
+  app.use(express.static('static'));
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+3  
