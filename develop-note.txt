@@ -9,4 +9,12 @@ https://expressjs.com/en/starter/static-files.html
   app.use(express.static('static'));
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 
-3  
+3 I have add css style to the main html file which consuming a lot of time;
+
+4 next, let express deal with post request,
+  using app.post() method;
+  install body-parser package; npm install body-parser --save
+
+5 use ejs engine
+  first, use local list to papulate the todo list;
+  change ul to ol [unorder list to order list]

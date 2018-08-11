@@ -15,24 +15,25 @@
         </div>
 
         <div id="add-item" class="">
-          <form id="item-form" class="" action="" method="post">
-            <input id="new-item" type="text" name="new-item-content" value="">
-            <button id="sumbit-item" type="submit" name="add-item"> Add </button>
+          <form id="item-form" class="" action="/" method="post">
+            <input id="new-item" type="text" name="new_item">
+            <button id="sumbit-item" type="submit"> Add </button>
           </form>
         </div>
 
       </div>
 
       <div id="item-list-wrapper" class="">
-        <ul id="item-list">
-          <li>1 finish to do appy</li>
-          <li>2 美化网页</li>
-          <li>3 add header style</li>
-          <li>4 finish to do app</li>
-
-
-        </ul>
+        <ol id="item-list">
+          <% for(var i = 0; i < data.length; i++){ %>
+            <li><%= data[i] %></li>
+          <% } %>
+        </ol>
       </div>
+
+      <!-- <div style="text-align: center; color: white; padding-bottom: 2px;">
+        <p><%= data.length %></p>
+      </div> -->
 
       <div id="footer-wrapper" class="">
         <small id="footer">苏ICP备18042592号-1</small>
