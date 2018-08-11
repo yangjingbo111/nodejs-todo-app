@@ -1,0 +1,10 @@
+This is a nodejs app with the name todo app;
+
+In order to run it in your computer,
+you shold:
+1 install nodejs and npm on your omputer;
+2 install mongoDB and run it;
+3 go to the project folder which this README file resides
+and run npm init [npm will install the dependencies automatically for you according to the package.json];
+4 open your browser and type http://127.0.0.1:3000 in your address bar;
+5 enjoy your journey!!
