@@ -20,7 +20,7 @@ $(document).ready(function(){
 
   $("li").on('click', function(event){
     // event.preventDefault();
-    var item = $(this).text().replace(/ /g, "-");
+    var item = $(this).text();//.replace(/ /g, "-");
     console.log(item, "is about to delete");
     $.ajax({
       url: '/todo/' + item,

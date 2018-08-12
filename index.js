@@ -5,6 +5,7 @@ var mongoose = require('mongoose');
 // connect to database
 mongoose.connect('mongodb://127.0.0.1:27017/my_database',  { useNewUrlParser: true });
 
+
 mongoose.connection.once('open', function(){
   console.log('connect to database successfully');
 });
@@ -74,7 +75,7 @@ app.post('/todo', urlencodedParser, function(req, res){
 
 app.delete('/todo/:item', function(req, res){
   console.log('recv a delete request for:', req.params.item);
-  var item = req.params.item.replace(/\-/g, " ")
+  var item = req.params.item;//.replace(/\-/g, " ")
   TodoModel.find({item: item}).remove(function(err, docs){
     if(err) throw err;
     res.json(docs);
