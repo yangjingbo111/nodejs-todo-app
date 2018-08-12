@@ -18,3 +18,20 @@ https://expressjs.com/en/starter/static-files.html
 5 use ejs engine
   first, use local list to papulate the todo list;
   change ul to ol [unorder list to order list]
+
+6 add js script, delete todo item, show some through-line effect when mouse
+ hover over the todo item;
+ use jquery, ajax
+ add some hover effect to the li tag, text-decoration and background changed when hover;
+ when user click a todo item, the js should issue an ajax delete request;
+
+7 use req.params.example-name to get data[example-name] from url [todo/example-name]
+
+8 in ajax request, use location.reload() to refresh the page. [naive way]
+
+9 connect to mongoDB, use mongoose driver;
+  mongodb://127.0.0.1:27017
+10 define a model
+
+11 when request to / url, retrive items from mongoDB database;
+  TodoModel.find({}, callback);

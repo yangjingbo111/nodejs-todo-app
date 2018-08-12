@@ -2,6 +2,7 @@ This is a nodejs app with the name todo app;
 
 In order to run it in your computer,
 you shold:
+0 have some basic knowledge of html, css, js, jquery, ajax, nodejs, mongoDB and so on; 
 1 install nodejs and npm on your omputer;
 2 install mongoDB and run it;
 3 go to the project folder which this README file resides

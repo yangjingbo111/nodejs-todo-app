@@ -1,6 +1,7 @@
 body{
   font-family: arial;
   background: #222;
+
 }
 
 #header-wrapper{
@@ -75,6 +76,15 @@ body{
   padding: 8px;
   margin-left: 16px;
   /* background: #222; */
+}
+
+#item-list li:hover{
+  margin-top: 10px;
+  /* border:1px solid grey; */
+  padding: 8px;
+  margin-left: 16px;
+  text-decoration: line-through;
+  background: #222;
 }
 
 #footer-wrapper{
